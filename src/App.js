@@ -1,6 +1,5 @@
 import React from "react";
 import emailjs from "emailjs-com";
-import { Link } from "react-router-dom";
 
 function sendEmail(e) {
  e.preventDefault(); //This is important, i'm not sure why, but the email won't send without it
@@ -38,44 +37,41 @@ function App() {
      <nav id="navbar" class="navbar">
       <ul>
        <li>
-        <a class="nav-link active" href="#header">
+        <a href="index.html" class="nav-link">
          Home
         </a>
        </li>
        <li>
-        <a
-         class="nav-link"
-         href="#about"
-         onClick={() => window.location.replace("/#about")}
-        >
+        <a href="#aboutSection" class="nav-link">
          About me
         </a>
        </li>
        <li>
-        <a
-         class="nav-link"
-         href="#resume"
-         onClick={() => window.location.replace("/#resume")}
-        >
-         Resume
+        <a href="#experience" class="nav-link">
+         <div
+          class="nav-link"
+          onClick={(e) => {
+           e.preventDefault();
+           window.location.replace("/#experience");
+          }}
+         >
+          Resume
+         </div>
         </a>
        </li>
        <li>
-        <a
-         class="nav-link"
-         href="#portfolio"
-         onClick={() => window.location.replace("/#portfolio")}
-        >
-         Portfolio
+        <a href="#projects" class="nav-link">
+         <div
+          class="nav-link"
+          onClick={() => window.location.replace("/#projects")}
+         >
+          Portfolio
+         </div>
         </a>
        </li>
 
        <li>
-        <a
-         class="nav-link"
-         href="#contact"
-         onClick={() => window.location.replace("/#contact")}
-        >
+        <a class="nav-link" href="#contact">
          Get in Touch
         </a>
        </li>
@@ -98,7 +94,7 @@ function App() {
     </div>
    </header>
 
-   <section id="about" class="about">
+   <section id="aboutSection" class="about">
     <div class="about-me container">
      <div class="section-title">
       <h2>About</h2>
@@ -465,7 +461,7 @@ function App() {
     </div>
    </section>
 
-   <section id="resume" class="resume">
+   <section id="experience" class="resume">
     <div class="container">
      <div class="section-title">
       <h2>Resume</h2>
@@ -697,7 +693,7 @@ function App() {
     </div>
    </section>
 
-   <section id="portfolio" class="portfolio">
+   <section id="projects" class="portfolio">
     <div class="container">
      <div class="section-title">
       <h2>Portfolio</h2>
