@@ -37,7 +37,7 @@ function App() {
      <nav id="navbar" class="navbar">
       <ul>
        <li>
-        <a href="index.html" class="nav-link">
+        <a href="/" class="nav-link">
          Home
         </a>
        </li>
@@ -47,26 +47,18 @@ function App() {
         </a>
        </li>
        <li>
+        <a href="#expertise" class="nav-link">
+         Expertise
+        </a>
+       </li>
+       <li>
         <a href="#experience" class="nav-link">
-         <div
-          class="nav-link"
-          onClick={(e) => {
-           e.preventDefault();
-           window.location.replace("/#experience");
-          }}
-         >
-          Resume
-         </div>
+         Work Experience
         </a>
        </li>
        <li>
         <a href="#projects" class="nav-link">
-         <div
-          class="nav-link"
-          onClick={() => window.location.replace("/#projects")}
-         >
-          Portfolio
-         </div>
+         Portfolio
         </a>
        </li>
 
@@ -94,7 +86,7 @@ function App() {
     </div>
    </header>
 
-   <section id="aboutSection" class="about">
+   <div id="aboutSection" name="aboutSection" class="about">
     <div class="about-me container">
      <div class="section-title">
       <h2>About</h2>
@@ -227,7 +219,9 @@ function App() {
       </div>
      </div>
     </div>
+   </div>
 
+   <div id="expertise" name="expertise" class="about">
     <div class="skills container">
      <div class="section-title">
       <h2>Expertise</h2>
@@ -329,6 +323,8 @@ function App() {
       </div>
      </div>
     </div>
+    <br />
+    <br />
 
     <div class="interests container">
      <div class="section-title">
@@ -459,13 +455,15 @@ function App() {
       </div>
      </div>
     </div>
-   </section>
+   </div>
 
-   <section id="experience" class="resume">
+   <br />
+   <br />
+   <div id="experience" name="experience" class="resume">
     <div class="container">
      <div class="section-title">
-      <h2>Resume</h2>
-      <p>A Bit About Me</p>
+      <h2>Work Experience </h2>
+      <p>A Bit About My Experience so far </p>
      </div>
 
      <div class="row">
@@ -582,6 +580,8 @@ function App() {
         </p>
        </div>
 
+       <br />
+       <br />
        <h3 class="resume-title">Education</h3>
        <div class="resume-item">
         <h4>Bachelors in Information Technology &amp; Software Development</h4>
@@ -691,9 +691,11 @@ function App() {
       </div>
      </div>
     </div>
-   </section>
+   </div>
 
-   <section id="projects" class="portfolio">
+   <br />
+   <br />
+   <div id="projects" name="projects" class="portfolio">
     <div class="container">
      <div class="section-title">
       <h2>Portfolio</h2>
@@ -785,9 +787,11 @@ function App() {
       </div>
      </div>
     </div>
-   </section>
+   </div>
 
-   <section id="contact" class="contact">
+   <br />
+   <br />
+   <div id="contact" class="contact">
     <div class="container">
      <div class="section-title">
       <h2>Contact</h2>
@@ -890,7 +894,7 @@ function App() {
       </div>
      </form>
     </div>
-   </section>
+   </div>
   </div>
  );
 }
