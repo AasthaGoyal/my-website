@@ -61,7 +61,11 @@ function Home() {
          Portfolio
         </a>
        </li>
-
+       <li>
+        <a href="#journal-blog" class="nav-link">
+         My Blog
+        </a>
+       </li>
        <li>
         <a class="nav-link" href="#contact">
          Get in Touch
@@ -765,22 +769,8 @@ function Home() {
          <h4>Cleaning Company</h4>
          <p>Website</p>
          <div class="portfolio-links">
-          <a
-           href="assets/img/portfolio/portfolio-2.jpg"
-           data-gallery="portfolioGallery"
-           class="portfolio-lightbox"
-           title="Web 3"
-          >
-           {/* <i class="bx bx-plus"></i> */}
-          </a>
-          <a
-           href="portfolio-details.html"
-           data-gallery="portfolioDetailsGallery"
-           data-glightbox="type: external"
-           class="portfolio-details-lightbox"
-           title="Portfolio Details"
-          >
-           <i class="bx bx-link"></i>
+          <a href="/cleaningProject">
+           <i class="bx bx-info-circle"></i>
           </a>
          </div>
         </div>
@@ -792,6 +782,48 @@ function Home() {
 
    <br />
    <br />
+   <div id="journal-blog" class="text-left  paddsections">
+    <div class="container">
+     <div class="section-title text-left">
+      <h2>Blog</h2>
+      <p> My Blog Journal</p>
+     </div>
+    </div>
+
+    <div class="container">
+     <div class="journal-block">
+      <div class="row">
+       <div class="col-lg-4 col-md-6">
+        <div class="journal-info mb-30 text-center">
+         <a href="blog-single.html">
+          <img
+           src="assets/img/hourglass.jpg"
+           class="img-responsive"
+           style={{ height: "300px" }}
+           alt="img"
+          />
+         </a>
+         <div class="journal-txt">
+          <br />
+          <h4>Decision making</h4>
+          <br />
+          <a href="https://medium.com/@aasthagoyal/an-inspiring-incident-that-i-would-always-remember-fa8e7b3874e8">
+           <button
+            type="submit"
+            style={{ backgroundColor: "green", color: "black" }}
+           >
+            Read More...
+           </button>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <br />
+
    <div id="contact" class="contact">
     <div class="container">
      <div class="section-title">
